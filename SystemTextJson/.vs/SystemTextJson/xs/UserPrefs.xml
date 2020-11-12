@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{26329A59-8F40-4A24-BD7D-F1376D5079EA}|Default">
+  <MonoDevelop.Ide.ItemProperties.SystemTextJson PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SystemTextJson/EmptyClass.cs">
+    <Files>
+      <File FileName="SystemTextJson/Program.cs" Line="7" Column="9" />
+      <File FileName="SystemTextJson/EmptyClass.cs" Line="10" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SystemTextJson" expanded="True">
+            <Node name="SystemTextJson" expanded="True">
+              <Node name="EmptyClass.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
