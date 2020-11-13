@@ -1,14 +1,21 @@
 ﻿using System;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using System.IO;
 using System.Collections.Generic;
 
 namespace SystemTextJson
 {
     public class Books
     {
-        Dictionary<int, items> books;
-        public Books()
+        Items items;
+        List<Items> books;
+        public Books(string jsonString, JsonSerializerOptions options,
+            string position)
         {
-            books = new Dictionary<int, items>();
+            items = new Items(jsonString, options, position);
+            books = new List<Items>();
+            books.Add(items);
         }
     }
 }
