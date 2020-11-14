@@ -3,7 +3,6 @@
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/bin/Debug/netcoreapp3.1/SystemTextJson.runtimeconfig.dev.json
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/bin/Debug/netcoreapp3.1/SystemTextJson.dll
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/bin/Debug/netcoreapp3.1/SystemTextJson.pdb
-/Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/obj/Debug/netcoreapp3.1/SystemTextJson.csprojAssemblyReference.cache
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/obj/Debug/netcoreapp3.1/SystemTextJson.AssemblyInfoInputs.cache
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/obj/Debug/netcoreapp3.1/SystemTextJson.AssemblyInfo.cs
 /Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/obj/Debug/netcoreapp3.1/SystemTextJson.csproj.CoreCompileInputs.cache

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Text.Json.Serialization;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.IO;
+using System;
 using System.Collections.Generic;
 
 namespace SystemTextJson
@@ -10,18 +9,34 @@ namespace SystemTextJson
     {
         static void Main(string[] args)
         {
+            var objVolume = new VolumeInfo();
+
             string jsonSource = Directory.GetParent                             //getting the root directory 
                 (Directory.GetCurrentDirectory()).Parent.Parent.ToString();
-            string jsonString = $"Data Source ={jsonSource}" +
-                @"/Google Books API.postman_collection.json";                   //getting path 
+            string jsonString = File.ReadAllText($"{jsonSource}/response.json");   //getting path
 
-            var options = new JsonSerializerOptions
+            var serializeOptions = new JsonSerializerOptions
             {
-                PropertyNameCaseInsensitive = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = true
             };
 
-            Books books = new Books(jsonString, options, "Deserialize");
+            string json = JsonSerializer.Serialize(jsonString, serializeOptions);
 
+            //Console.WriteLine(json);
+
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+
+            var items = JsonSerializer.Deserialize<VolumeInfo>(jsonString, options);
+
+
+            foreach ( var i in items)
+            {
+                Console.WriteLine(items.authors);
+            }
+            
+            
+            
 
         }
     }
