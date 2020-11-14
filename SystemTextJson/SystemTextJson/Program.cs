@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
 using System.IO;
 using System;
-using System.Collections.Generic;
 
 namespace SystemTextJson
 {
@@ -9,11 +8,25 @@ namespace SystemTextJson
     {
         static void Main(string[] args)
         {
-            var objVolume = new VolumeInfo();
+            var objVolume = new Book();
 
             string jsonSource = Directory.GetParent                             //getting the root directory 
                 (Directory.GetCurrentDirectory()).Parent.Parent.ToString();
             string jsonString = File.ReadAllText($"{jsonSource}/response.json");   //getting path
+
+            var book = JsonSerializer.Deserialize<Book>(jsonString,
+              new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+            Console.WriteLine(book.kind);
+            Console.WriteLine(book.totalItems);
+            foreach ( var item in book.items)
+            {
+                Console.WriteLine(item.etag);
+                foreach (var author in item.volumeInfo.authors)
+                {
+                    Console.WriteLine(author);
+                }
+            }
 
             var serializeOptions = new JsonSerializerOptions
             {
@@ -23,20 +36,10 @@ namespace SystemTextJson
 
             string json = JsonSerializer.Serialize(jsonString, serializeOptions);
 
-            //Console.WriteLine(json);
-
-            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-
-            var items = JsonSerializer.Deserialize<VolumeInfo>(jsonString, options);
+            Console.WriteLine(json);
 
 
-            foreach ( var i in items)
-            {
-                Console.WriteLine(items.authors);
-            }
-            
-            
-            
+
 
         }
     }

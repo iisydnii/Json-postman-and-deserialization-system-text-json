@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{26329A59-8F40-4A24-BD7D-F1376D5079EA}|Default">
   <MonoDevelop.Ide.ItemProperties.SystemTextJson PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SystemTextJson/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SystemTextJson/Items.cs">
     <Files>
-      <File FileName="SystemTextJson/Program.cs" Line="33" Column="13" />
-      <File FileName="SystemTextJson/Items.cs" Line="8" Column="11" />
-      <File FileName="SystemTextJson/VolumeInfo.cs" Line="6" Column="28" />
-      <File FileName="SystemTextJson/Book.cs" Line="9" Column="22" />
+      <File FileName="SystemTextJson/Program.cs" Line="28" Column="1" />
+      <File FileName="SystemTextJson/Items.cs" Line="12" Column="26" />
+      <File FileName="SystemTextJson/VolumeInfo.cs" Line="1" Column="25" />
+      <File FileName="SystemTextJson/Book.cs" Line="7" Column="22" />
+      <File FileName="SystemTextJson/response.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SystemTextJson" expanded="True">
             <Node name="SystemTextJson" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Items.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -22,9 +23,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sydniward/Desktop/Server Side/Projects/json-postman-and-c-de-serialization-system-text-json-iisydnii/SystemTextJson/SystemTextJson/Program.cs" relfile="SystemTextJson/Program.cs" line="31" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
